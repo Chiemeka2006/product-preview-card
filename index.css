@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+
+body {
+    background: #F3EBE4;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    background-color: white;
+    display: flex;
+    width: 30em;
+    height: 23em;
+    border-radius: .5em;
+}
+
+img {
+    width: 50%;
+    height: 100%;
+    border-radius: .5em 0 0 .5em;
+}
+
+div.flex-text {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* gap: 23em; */
+    gap: .5em;
+    padding: 1.0em 1.0em;
+    font-size: 1.1rem;
+
+}
+
+div.flex-text > * {
+    margin: 0%;
+}
+
+div.flex-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .0em .5em .6em 0;
+    /* border: 1px solid black; */
+}
+
+aside:first-child {
+    color: #729F8B;
+    font-family: 'Fraunces', serif;
+    font-size: 1.7em;
+}
+
+aside:last-child {
+    text-decoration: line-through;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .8em;
+}
+
+p.body {
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+p.head {
+    margin: 0%;
+}
+
+p.header {
+    font-family: 'Montserrat', sans-serif;
+    word-spacing: 1.5em;
+    letter-spacing: .5em;
+    text-transform: uppercase;
+    margin: .15em;
+    color: #E2E2E4;
+    text-shadow: 1px 1px 0px black;
+}
+
+h2 {
+    font-family: 'Fraunces', serif;
+    margin: 0%;
+}
+
+button {
+    padding: .8em;
+    width: 100%;
+    border-radius: .7em;
+    border: none;
+    background: #3D8168;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    /* height: 2em; */
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    font-weight: 700;
+    transition: scale .5s;
+
+}
+
+button:hover {
+    scale: 103% 100%;
+}
+
+@media only screen and (max-width:700px) {
+    .container {
+        scale: 100%;
+        /* width: 22em; */
+        width: 84vw;
+        height: 38em;
+        flex-direction: column;
+    }
+    /* .flex-text {
+        gap: .1em;
+    } */
+
+    img {
+        width: 100%;
+        height: 40%;
+        border-radius: .5em .5em 0 0;
+        object-fit: cover;
+        object-position: 0 35%;
+
+    }
+
+    div.flex-text {
+        width: 100%;
+        height: 60%;
+        gap: .8em;
+        padding: 1.5em 1.5em;
+    }
+
+    div.flex-price {
+        justify-content: unset;
+        /* gap: 3em; */
+        gap: 2em;
+
+    }
+}
